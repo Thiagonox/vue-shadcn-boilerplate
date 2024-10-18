@@ -22,19 +22,21 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        'space-grotesk': ['"Space Grotesk"', 'sans-serif'],
+        'plus-jakarta': ['"Plus Jakarta Sans"', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+        colors: {
+          primary: '#3381ff',   // Cor primária
+          secondary: '#a6d31c', // Cor secundária
+          white: '#efe8ef',     // Branco personalizado
+          black: '#111114',     // Preto personalizado
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
