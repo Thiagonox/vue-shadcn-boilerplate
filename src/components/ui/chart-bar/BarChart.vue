@@ -42,7 +42,7 @@ type KeyOfT = Extract<keyof T, string>
 type Data = typeof props.data[number]
 
 const index = computed(() => props.index as KeyOfT)
-const colors = computed(() => props.colors?.length ? props.colors : defaultColors(props.categories.length))
+const colors = computed(() => props.colors?.length ? props.colors : Array(props.categories.length).fill('hsl(221.2, 83.2%, 53.3%)'))
 const legendItems = ref<BulletLegendItemInterface[]>(props.categories.map((category, i) => ({
   name: category,
   color: colors.value[i],
